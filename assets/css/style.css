@@ -13,6 +13,7 @@ body{
     display: flex;
     flex-direction: column;
 } 
+
 /* Styling for all headings */
 .style-heading{
     background: teal;
@@ -42,7 +43,6 @@ body{
 .menu{
     display: flex;
     width: 60%;
-    min-width: 480px;
     align-items: center;
     margin: auto;
 }
@@ -57,7 +57,6 @@ body{
     display: flex;
     flex-direction: column;
     width: 60%;
-    min-width: 480px;
     margin: 2% auto 40px auto;
     background: #ffffff;
     border: solid 3px #cccccc;
@@ -152,3 +151,50 @@ body{
  a:hover{
     color: blue;
 } 
+@media screen  and (max-width:980px ) and (min-width:768px){
+
+    .menu{
+        display: block;
+        margin: 5%;
+        width: 700px;
+    }
+    .content-wrapper{
+        width: 700px;
+        margin: 5%;
+    }
+
+}
+
+@media screen and (max-width:768px ) and (min-width: 640px) {
+   
+    .menu{
+        display: block;
+        margin: 5%;
+        width:auto;
+    }
+    .content-wrapper{
+        margin: 5%;
+        width:auto;
+    }
+    .image>img, .image-text{
+        width: 300px;
+    }
+    
+
+}
+
+@media screen and (max-width:640px){
+    .menu{
+        display: block;
+        margin: 5% auto;
+        width:auto;
+    }
+    .content-wrapper{
+        margin: 5% auto;
+        width:auto;
+    }
+    .image>img, .image-text{
+        width: 325px;
+    }
+
+}
